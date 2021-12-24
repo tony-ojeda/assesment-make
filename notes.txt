@@ -1,0 +1,14 @@
+--- eslint ---
+https://eslint.org/docs/user-guide/getting-started
+https://eslint.org/docs/rules/
+
+#two types (possible problems and suggestions)
+#add in package.json
+    "rules": {
+        "no-console": "warn",
+        "no-alert": "warn",
+        "no-var": "error",
+        "no-useless-return": "warn"
+    }
+
+$npx eslint --init // config styles guide popular
