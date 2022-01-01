@@ -1,0 +1,80 @@
+@import '/src/_vars.scss';
+
+.modal {
+  position: fixed; /* Stay in place */
+  top: 0;      
+  left: 0;
+  z-index: 1; /* Sit on top */
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background: rgba(0, 0, 0, 0.6);
+
+  &__content {
+    background: #fefefe;
+    margin-top: 5rem;
+    padding: 2rem;
+    position: relative;
+    border: 1px solid #888;
+    max-width: 50rem; /* Full width */
+    height: 35rem; /* Full height */
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+  }
+
+  &__header {
+    position: relative;
+    width: 100%;
+  }
+
+  &__image {
+    width: 30rem;
+    height: 20rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+}
+
+.title {
+    font-size: 1.6rem;
+    color: $color-headline;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: .5rem 0;
+    color: $color-paragraph;
+}
+
+.details {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.hidden {
+  color: #aaa;
+  float: right;
+  font-size: 3rem;
+  padding: 0 1.5rem;
+  font-weight: bold;
+}
+
+.hidden:hover,
+.hidden:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

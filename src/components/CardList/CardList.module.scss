@@ -1,0 +1,7 @@
+.galery {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    margin: 1.5rem;
+}
